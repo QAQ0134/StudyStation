@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: StudyStation
+  datasource:
+    url: jdbc:mysql://localhost:3306/studystation
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 1234
+  servlet:
+    multipart:
+      max-file-size: 10MB      # 单个文件最大 10MB
+      max-request-size: 100MB  # 单次请求最大 100MB
+  data:
+    redis:
+      host: 192.168.88.104
+      port: 6379
+      password: 123456
+      database: 0
+
+studystation:
+  upload:
+    path: F:/Desktop/StudyStation_Uploads/
+
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    #开启驼峰命名映射开关
+    map-underscore-to-camel-case: true
