@@ -27,7 +27,7 @@ public class CommentController {
             commentService.addComment(comment);
             return Result.success();
         } catch (Exception e) {
-            return Result.error("评论失败，请先登录");
+            return Result.error("发表评论失败，请先登录");
         }
     }
 
