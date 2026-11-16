@@ -1,0 +1,29 @@
+# ========== 后端（Maven / Spring Boot）==========
+target/
+*.class
+*.log
+logs/
+
+# ========== 前端（Vue / Vite）==========
+node_modules/
+dist/
+dist-ssr/
+.vite/
+*.local
+
+# ========== IDE ==========
+.idea/
+*.iml
+.vscode/
+*.swp
+
+# ========== 系统 ==========
+.DS_Store
+Thumbs.db
+
+# ========== 本地私有配置（不要提交）==========
+# 注意：application.yml 中的数据库密码、Redis 密码
+# 建议改成 ${DB_PASSWORD:默认值} 的环境变量写法后再提交
+application-local.yml
+application-dev-local.yml
+*.env
